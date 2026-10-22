@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemadharshani | Portfolio & Academic Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+
+  <!-- Subtle Ambient Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Luxe Floating Navigation Bar -->
+  <header class="luxe-header">
+    <div class="luxe-nav-container">
+      <div class="luxe-brand">
+        <span class="brand-monogram">HD</span>
+        <span class="brand-name">Hemadharshani</span>
+      </div>
+
+      <nav class="luxe-menu" id="nav-menu">
+        <button class="nav-item active" data-tab="home">Home</button>
+        <button class="nav-item" data-tab="about">Academics</button>
+        <button class="nav-item" data-tab="skills">Expertise</button>
+        <button class="nav-item" data-tab="projects">Projects</button>
+        <button class="nav-item" data-tab="contact">Contact</button>
+      </nav>
+
+      <div class="luxe-controls">
+        <button class="control-btn" id="theme-toggle" aria-label="Toggle Theme">✦</button>
+        <button class="menu-btn" id="mobile-toggle" aria-label="Toggle Mobile Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main View Router Container -->
+  <main class="luxe-main container">
+
+    <!-- VIEW 1: HOME / HERO -->
+    <section id="home" class="luxe-section active">
+      <div class="hero-editorial-grid">
+        <div class="hero-text-panel">
+          <div class="editorial-tag">
+            <span class="tag-line"></span>
+            <span>KG College Of Arts And Science • Scholar</span>
+          </div>
+
+          <h1 class="editorial-heading">
+            Design & Code, <br>
+            <span class="gold-gradient">Curated with Precision.</span>
+          </h1>
+
+          <p class="editorial-sub">
+            Greetings, I'm <strong>Hemadharshani</strong>. An undergraduate student dedicated to learning modern web technologies, building accessible digital experiences, and pursuing steady academic growth.
+          </p>
+
+          <div class="editorial-actions">
+            <button class="luxe-btn btn-gold" onclick="switchTab('projects')">Explore Projects →</button>
+            <button class="luxe-btn btn-outline" onclick="switchTab('about')">View Academic Record</button>
+          </div>
+
+          <div class="editorial-metrics">
+            <div class="metric-block">
+              <span class="m-val">60-70%</span>
+              <span class="m-txt">Academic Range</span>
+            </div>
+            <div class="m-sep"></div>
+            <div class="metric-block">
+              <span class="m-val">07+</span>
+              <span class="m-txt">Built Projects</span>
+            </div>
+            <div class="m-sep"></div>
+            <div class="metric-block">
+              <span class="m-val">100%</span>
+              <span class="m-txt">Focus & Drive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-profile-card luxe-glass">
+          <div class="profile-avatar-frame">
+            <span class="avatar-initials">HD</span>
+          </div>
+          <h3>Hemadharshani</h3>
+          <p class="profile-meta">Undergraduate Student @ KG CAS</p>
+          <div class="profile-socials">
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 2: ABOUT & ACADEMICS -->
+    <section id="about" class="luxe-section">
+      <div class="section-heading-box">
+        <span class="sub-badge">ACADEMIC STANDING</span>
+        <h2 class="main-title">Background & Records</h2>
+      </div>
+
+      <div class="academics-editorial-grid">
+        <div class="editorial-box luxe-glass">
+          <h3>Personal Background</h3>
+          <p class="box-desc">I am currently pursuing my undergraduate degree at <strong>KG College Of Arts And Science</strong>. My academic approach emphasizes consistent effort, critical thinking, and continuous improvement.</p>
+          <p class="box-desc">Across semesters, I maintain a steady performance level averaging between <strong>60% and 70%</strong>, balancing coursework with skill-building.</p>
+          <div class="badge-row">
+            <span class="pill-tag">Matriculation Graduate</span>
+            <span class="pill-tag">Dedicated Learner</span>
+          </div>
+        </div>
+
+        <div class="editorial-box luxe-glass">
+          <div class="box-top-row">
+            <h4>KG College Of Arts And Science</h4>
+            <span class="score-pill">65% Average</span>
+          </div>
+
+          <div class="progress-container">
+            <div class="prog-item">
+              <div class="prog-meta">
+                <span>Semester 1 Examination</span>
+                <span class="prog-num">67%</span>
+              </div>
+              <div class="prog-bg"><div class="prog-fill" style="width: 67%;"></div></div>
+            </div>
+
+            <div class="prog-item">
+              <div class="prog-meta">
+                <span>Semester 2 Examination</span>
+                <span class="prog-num">65%</span>
+              </div>
+              <div class="prog-bg"><div class="prog-fill" style="width: 65%;"></div></div>
+            </div>
+
+            <div class="education-milestone">
+              <h5>Higher Secondary Education</h5>
+              <p>Completed via the <strong>Matriculation Board</strong> with a strong academic foundation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: SKILLS -->
+    <section id="skills" class="luxe-section">
+      <div class="section-heading-box">
+        <span class="sub-badge">PROFESSIONAL EXPERTISE</span>
+        <h2 class="main-title">Core Capabilities</h2>
+      </div>
+
+      <div class="skills-trio-grid">
+        <div class="skill-card luxe-glass">
+          <div class="sc-number">01</div>
+          <h3>Web Frontend</h3>
+          <p>Developing clean, responsive interfaces using semantic HTML5, CSS3, and foundational JavaScript.</p>
+        </div>
+
+        <div class="skill-card luxe-glass">
+          <div class="sc-number">02</div>
+          <h3>UI/UX Principles</h3>
+          <p>Wireframing structured layouts, emphasizing user flow clarity, contrast, and visual balance.</p>
+        </div>
+
+        <div class="skill-card luxe-glass">
+          <div class="sc-number">03</div>
+          <h3>Soft Skills</h3>
+          <p>Team communication, methodical problem-solving, project organization, and research analysis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: PROJECTS -->
+    <section id="projects" class="luxe-section">
+      <div class="section-heading-box">
+        <span class="sub-badge">PORTFOLIO WORK</span>
+        <h2 class="main-title">Featured Projects</h2>
+      </div>
+
+      <div class="filter-tab-row">
+        <button class="filter-tab active" data-filter="all">All</button>
+        <button class="filter-tab" data-filter="Web Application">Web Apps</button>
+        <button class="filter-tab" data-filter="UI/UX & Web Design">UI Design</button>
+        <button class="filter-tab" data-filter="Utility Tool">Utilities</button>
+      </div>
+
+      <div class="projects-editorial-grid">
+        <!-- Project 1 -->
+        <article class="project-item-card luxe-glass" data-category="Web Application">
+          <div class="p-cat">Web Application</div>
+          <h3>KG CAS Student Portal</h3>
+          <p>Academic dashboard interface designed for college students to track modules and notices.</p>
+          <div class="p-tags"><span>HTML5</span><span>CSS Grid</span><span>JS</span></div>
+          <button class="p-detail-btn" onclick="openProjectModal(1)">View Details →</button>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-item-card luxe-glass" data-category="UI/UX & Web Design">
+          <div class="p-cat">UI Design</div>
+          <h3>Responsive E-Learning Hub</h3>
+          <p>Online learning platform interface layout with expandable course accordions and video UI.</p>
+          <div class="p-tags"><span>Flexbox</span><span>JavaScript</span></div>
+          <button class="p-detail-btn" onclick="openProjectModal(2)">View Details →</button>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-item-card luxe-glass" data-category="Utility Tool">
+          <div class="p-cat">Utility Tool</div>
+          <h3>Academic GPA Calculator</h3>
+          <p>Grade calculation tool structured for college credit systems with real-time computation.</p>
+          <div class="p-tags"><span>Vanilla JS</span><span>HTML5</span></div>
+          <button class="p-detail-btn" onclick="openProjectModal(3)">View Details →</button>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-item-card luxe-glass" data-category="Web Application">
+          <div class="p-cat">Web Application</div>
+          <h3>Smart Study Tracker</h3>
+          <p>Productivity application featuring focus interval timer integration and local storage sync.</p>
+          <div class="p-tags"><span>JavaScript</span><span>LocalStorage</span></div>
+          <button class="p-detail-btn" onclick="openProjectModal(4)">View Details →</button>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-item-card luxe-glass" data-category="UI/UX & Web Design">
+          <div class="p-cat">UI Design</div>
+          <h3>Symposium Event Website</h3>
+          <p>Departmental showcase and registration platform featuring event schedules and tickers.</p>
+          <div class="p-tags"><span>HTML5</span><span>CSS Animation</span></div>
+          <button class="p-detail-btn" onclick="openProjectModal(5)">View Details →</button>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-item-card luxe-glass" data-category="Web Application">
+          <div class="p-cat">Web Application</div>
+          <h3>Interactive Weather Suite</h3>
+          <p>Real-time atmospheric tracking application showcasing temperature metrics and trends.</p>
+          <div class="p-tags"><span>Fetch API</span><span>JavaScript</span></div>
+          <button class="p-detail-btn" onclick="openProjectModal(6)">View Details →</button>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-item-card luxe-glass" data-category="UI/UX & Web Design">
+          <div class="p-cat">UI Design</div>
+          <h3>Portfolio Prototype v1</h3>
+          <p>Initial design exploration focusing on subtle glass layers and clean responsive compositions.</p>
+          <div class="p-tags"><span>HTML5</span><span>CSS3</span></div>
+          <button class="p-detail-btn" onclick="openProjectModal(7)">View Details →</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- VIEW 5: CONTACT -->
+    <section id="contact" class="luxe-section">
+      <div class="section-heading-box">
+        <span class="sub-badge">GET IN TOUCH</span>
+        <h2 class="main-title">Direct Connection</h2>
+      </div>
+
+      <div class="contact-editorial-grid">
+        <div class="contact-info-box luxe-glass">
+          <h3>Contact Details</h3>
+          <div class="info-row">
+            <span class="i-label">Email:</span>
+            <span class="i-val">hemadharshani.student@kgcas.edu</span>
+          </div>
+          <div class="info-row">
+            <span class="i-label">Institution:</span>
+            <span class="i-val">KG College Of Arts And Science</span>
+          </div>
+          <div class="info-row">
+            <span class="i-label">Location:</span>
+            <span class="i-val">Coimbatore, Tamil Nadu</span>
+          </div>
+          <div class="info-row">
+            <span class="i-label">Profiles:</span>
+            <span class="i-val">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style="color: #d4af37;">LinkedIn</a> • 
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" style="color: #d4af37;">GitHub</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-form-box luxe-glass">
+          <form id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" placeholder="Hemadharshani">
+              <span class="error-text" id="name-error">Please enter at least 2 characters.</span>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" placeholder="name@example.com">
+              <span class="error-text" id="email-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" placeholder="Write your message here..."></textarea>
+              <span class="error-text" id="message-error">Message must be at least 10 characters long.</span>
+            </div>
+
+            <button type="submit" class="luxe-btn btn-gold" style="width: 100%; justify-content: center;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="luxe-footer">
+    <p>&copy; 2026 Hemadharshani • KG College Of Arts And Science. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal-layer" id="project-modal">
+    <div class="modal-content-box luxe-glass">
+      <button class="modal-dismiss" onclick="closeModal()">✕</button>
+      <h3 id="modal-title">Project Title</h3>
+      <p id="modal-category" class="modal-subtag"></p>
+      <p id="modal-description" class="modal-body-text"></p>
+    </div>
+  </div>
+
+  <div class="toast-alert" id="toast">Message validated successfully!</div>
+  <button class="top-scroll-btn" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
